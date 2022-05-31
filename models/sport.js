@@ -16,6 +16,13 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  coaches: [
+    {
+      type: mongoose.Types.ObjectId,
+      required: true,
+      get: (key) => key.toString(),
+    }
+  ],
   foundation_date: {
     type: Date,
 

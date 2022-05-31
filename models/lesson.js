@@ -17,10 +17,22 @@ const schema = new mongoose.Schema({
     required: true,
     get: (key) => key.toString(),
   },
+  players: [
+    {
+      type: mongoose.Types.ObjectId,
+      required: true,
+      get: (key) => key.toString(),
+    }
+  ],
   date: {
     type: Date,
     required: true,
 
+  },
+  location: {
+    type: mongoose.Types.ObjectId,
+    required: true,
+    get: (key) => key.toString(),
   },
   description: {
     type: String,

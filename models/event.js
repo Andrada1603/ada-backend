@@ -6,31 +6,20 @@ const { timestamps } = require('./schemas');
 /**
  * Identities manage login related operations
  */
-const name = 'match';
+const name = 'event';
 const schema = new mongoose.Schema({
-  player1: {
-    type: mongoose.Types.ObjectId,
-    required: true,
-    get: (key) => key.toString(),
-  },
-  player2: {
-    type: mongoose.Types.ObjectId,
-    required: true,
-    get: (key) => key.toString(),
-  },
-  arbiter_name: {
+  id_player: {
     type: String,
     required: true,
   },
-  date: {
-    type: Date,
+  id_abonament: {
+    type: String,
+    required: true,
+  },
+  event_type: {
+    type: String,
+    enum:['unofficial', 'national', 'international'],
 
-  },
-  location: {
-    type: String,
-  },
-  match_type: {
-    type: String,
   },
   ...timestamps,
 });

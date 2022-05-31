@@ -11,6 +11,7 @@ const schema = new mongoose.Schema({
 
   abonament_type: {
     type: String,
+    enum['Premium', 'Medium', 'Basic'],
     required: true,
   },
   starting_date: {
