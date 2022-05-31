@@ -6,35 +6,24 @@ const { timestamps } = require('./schemas');
 /**
  * Identities manage login related operations
  */
-const name = 'identity';
+const name = 'lesson';
 const schema = new mongoose.Schema({
   name: {
     type: String,
+    required: true,
+  },
+  coach_id: {
+    type: mongoose.Types.ObjectId,
+    required: true,
+    get: (key) => key.toString(),
+  },
+  date: {
+    type: Date,
+    required: true,
 
   },
-  email: {
+  description: {
     type: String,
-    required: true,
-    validate: {
-      validator: (value) => isEmail(value),
-    },
-  },
-  password: {
-    type: String,
-    required: true,
-    minlength: 8,
-    select: false,
-  },
-  active: {
-    type: Boolean,
-    default: false,
-  },
-  confirmed: {
-    type: Boolean,
-    default: false,
-  },
-  confirmedAt: {
-    type: Date,
   },
   ...timestamps,
 });

@@ -6,35 +6,29 @@ const { timestamps } = require('./schemas');
 /**
  * Identities manage login related operations
  */
-const name = 'identity';
+const name = 'match';
 const schema = new mongoose.Schema({
-  name: {
+  player1: {
     type: String,
+    required: true,
+  },
+  player2: {
+    type: String,
+    required: true,
+  },
+  arbiter_name: {
+    type: String,
+    required: true,
+  },
+  date: {
+    type: Date,
 
   },
-  email: {
+  location: {
     type: String,
-    required: true,
-    validate: {
-      validator: (value) => isEmail(value),
-    },
   },
-  password: {
+  match_type: {
     type: String,
-    required: true,
-    minlength: 8,
-    select: false,
-  },
-  active: {
-    type: Boolean,
-    default: false,
-  },
-  confirmed: {
-    type: Boolean,
-    default: false,
-  },
-  confirmedAt: {
-    type: Date,
   },
   ...timestamps,
 });

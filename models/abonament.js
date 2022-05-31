@@ -6,35 +6,22 @@ const { timestamps } = require('./schemas');
 /**
  * Identities manage login related operations
  */
-const name = 'identity';
+const name = 'abonament';
 const schema = new mongoose.Schema({
-  name: {
+
+  abonament_type: {
     type: String,
+    required: true,
+  },
+  starting_date: {
+    type: Date,
 
   },
-  email: {
-    type: String,
-    required: true,
-    validate: {
-      validator: (value) => isEmail(value),
-    },
+  period: {
+    type: Number,
   },
-  password: {
-    type: String,
-    required: true,
-    minlength: 8,
-    select: false,
-  },
-  active: {
-    type: Boolean,
-    default: false,
-  },
-  confirmed: {
-    type: Boolean,
-    default: false,
-  },
-  confirmedAt: {
-    type: Date,
+  price: {
+    type: Number,
   },
   ...timestamps,
 });

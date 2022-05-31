@@ -6,11 +6,19 @@ const { timestamps } = require('./schemas');
 /**
  * Identities manage login related operations
  */
-const name = 'identity';
+const name = 'coach';
 const schema = new mongoose.Schema({
-  name: {
+  first_name: {
     type: String,
-
+    required: true,
+  },
+  last_name: {
+    type: String,
+    required: true,
+  },
+  birthday: {
+    type: Date,
+    
   },
   email: {
     type: String,
@@ -19,22 +27,14 @@ const schema = new mongoose.Schema({
       validator: (value) => isEmail(value),
     },
   },
-  password: {
+  salary: {
+    type: Number,
+  },
+  coach_category: {
     type: String,
-    required: true,
-    minlength: 8,
-    select: false,
   },
-  active: {
-    type: Boolean,
-    default: false,
-  },
-  confirmed: {
-    type: Boolean,
-    default: false,
-  },
-  confirmedAt: {
-    type: Date,
+  license_number: {
+    type: String,
   },
   ...timestamps,
 });

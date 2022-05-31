@@ -6,35 +6,19 @@ const { timestamps } = require('./schemas');
 /**
  * Identities manage login related operations
  */
-const name = 'identity';
+const name = 'sport';
 const schema = new mongoose.Schema({
   name: {
     type: String,
-
+    required: true,
   },
-  email: {
+  manager_name: {
     type: String,
     required: true,
-    validate: {
-      validator: (value) => isEmail(value),
-    },
   },
-  password: {
-    type: String,
-    required: true,
-    minlength: 8,
-    select: false,
-  },
-  active: {
-    type: Boolean,
-    default: false,
-  },
-  confirmed: {
-    type: Boolean,
-    default: false,
-  },
-  confirmedAt: {
+  foundation_date: {
     type: Date,
+
   },
   ...timestamps,
 });
