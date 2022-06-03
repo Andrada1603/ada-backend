@@ -15,7 +15,9 @@ const schema = new mongoose.Schema({
     required: true,
   },
   starting_date: {
-    type: Date,
+    year: Number,
+    month: Number,
+    day: Number,
 
   },
   period: {
