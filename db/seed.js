@@ -1,5 +1,6 @@
 const connectToMongo = require('../functions/connect');
 const identities = require('./seeds/001_identities');
+const coaches = require('./seeds/002_coaches');
 
 const seed = async (params) => {
   if (process.env.MONGODB_URI.includes('mongodb+srv') && params !== '--force') {
@@ -9,6 +10,7 @@ const seed = async (params) => {
   await connectToMongo();
 
   await identities.seed();
+  await coaches.seed();
 };
 
 (async () => {

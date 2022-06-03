@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\db",
+    "\\db\\resources",
+    "\\models"
   ],
-  "SelectedNode": "\\router.js",
+  "SelectedNode": "\\models\\abonament.js",
   "PreviewInSolutionExplorer": false
 }
