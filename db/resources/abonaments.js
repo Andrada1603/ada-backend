@@ -54,3 +54,4 @@ module.exports = async () => {
       price: 200,
     },
   ]
+}
