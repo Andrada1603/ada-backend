@@ -4,7 +4,7 @@ const areas = require('../resources/areas');
 
 exports.seed = async () => {
   try {
-    console.log('Planting seeds for coaches');
+    console.log('Planting seeds for areas');
 
     const seeds = await areas();
     await Area.insertMany(seeds);

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { isEmail } = require('validator');
+// const { isEmail } = require('validator');
 const { hashPasswords, paginate, validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
@@ -11,7 +11,7 @@ const schema = new mongoose.Schema({
 
   abonament_type: {
     type: String,
-    enum['Premium', 'Medium', 'Basic'],
+    // enum['Premium', 'Medium', 'Basic'],
     required: true,
   },
   starting_date: {

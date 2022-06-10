@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const Player = require('../../models/playery');
+const Player = require('../../models/player');
 const players = require('../resources/players');
 
 exports.seed = async () => {

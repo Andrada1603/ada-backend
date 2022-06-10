@@ -4,7 +4,7 @@ const abonaments = require('../resources/abonaments');
 
 exports.seed = async () => {
   try {
-    console.log('Planting seeds for coaches');
+    console.log('Planting seeds for abonaments');
 
     const seeds = await abonaments();
     await Abonament.insertMany(seeds);
