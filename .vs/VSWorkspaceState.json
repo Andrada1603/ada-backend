@@ -3,8 +3,9 @@
     "",
     "\\db",
     "\\db\\resources",
+    "\\db\\seeds",
     "\\models"
   ],
-  "SelectedNode": "\\models\\abonament.js",
+  "SelectedNode": "\\models\\sport.js",
   "PreviewInSolutionExplorer": false
 }

@@ -6,11 +6,7 @@ module.exports = async () => {
     {
       first_name: 'Andrei',
       last_name: 'Popescu',
-      birthday: {
-        year: 1970,
-        month: 2,
-        day: 20,
-      },
+      birthday: new Date("18-04-1984"),
       email: 'andreipopescu70@gmail.com',
       salary: 3500,
       coach_category: 'Antrenor emerit',
@@ -19,11 +15,7 @@ module.exports = async () => {
     {
       first_name: 'Alina',
       last_name: 'Ionescu',
-      birthday: {
-        year: 1989,
-        month: 1,
-        day: 29,
-      },
+      birthday: new Date("14-02-1980"),
       email: 'alinaionescu@yahoo.com',
       salary: 2300,
       coach_category: 'I',
@@ -32,11 +24,7 @@ module.exports = async () => {
     {
       first_name: 'Victor',
       last_name: 'Ocnarescu',
-      birthday: {
-        year: 2000,
-        month: 1,
-        day: 16,
-      },
+      birthday: new Date("22-05-1989"),
       email: 'ocnarescuvic@yahoo.com',
       salary: 4000,
       coach_category: 'Antrenor emerit',
@@ -45,11 +33,7 @@ module.exports = async () => {
     {
       first_name: 'Razvan',
       last_name: 'Georgescu',
-      birthday: {
-        year: 1990,
-        month: 7,
-        day: 14,
-      },
+      birthday: new Date("04-12-1990"),
       email: 'rzvgeorgescu@yahoo.com',
       salary: 2000,
       coach_category: 'III',
@@ -58,11 +42,7 @@ module.exports = async () => {
     {
       first_name: 'Maya',
       last_name: 'Preda',
-      birthday: {
-        year: 1985,
-        month: 1,
-        day: 31,
-      },
+      birthday: new Date("22-02-1995"),
       email: 'prdmaya@gmail.com',
       salary: 2500,
       coach_category: 'I',
@@ -71,11 +51,7 @@ module.exports = async () => {
     {
       first_name: 'Vlad',
       last_name: 'Barbu',
-      birthday: {
-        year: 1984,
-        month: 11,
-        day: 11,
-      },
+      birthday: new Date("13-07-1975"),
       email: 'vladbarbu@yahoo.com',
       salary: 3000,
       coach_category: 'Antrenor national',
