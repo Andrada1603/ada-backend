@@ -2,7 +2,10 @@ const connectToMongo = require('../functions/connect');
 const abonaments = require('./seeds/003_abonaments');
 const areas = require('./seeds/004_areas');
 const coaches = require('./seeds/002_coaches');
+const events = require('./seeds/006_events');
 const identities = require('./seeds/001_identities');
+const lessons = require('./seeds/007_lessons');
+const matches = require('./seeds/008_matches');
 const players = require('./seeds/005_players');
 
 
@@ -16,8 +19,11 @@ const seed = async (params) => {
   await abonaments.seed();
   await areas.seed();
   await coaches.seed();
-  await identities.seed();
   await players.seed();
+  await identities.seed();
+  await events.seed();
+  await lessons.seed();
+  await matches.seed();
   
 };
 
