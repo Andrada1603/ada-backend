@@ -1,7 +1,4 @@
-const { hashSync } = require('bcryptjs');
-
 module.exports = async () => {
-  const shhhh = hashSync('supersecretpassword');
   return [
     {
       player1: '62a85fcadd1f7a5c34a91613',
