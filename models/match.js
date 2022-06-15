@@ -27,7 +27,9 @@ const schema = new mongoose.Schema({
 
   },
   location: {
-    type: String,
+    type: mongoose.Types.ObjectId,
+    required: true,
+    get: (key) => key.toString(),
   },
   match_type: {
     type: String,

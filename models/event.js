@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { isEmail } = require('validator');
 const { hashPasswords, paginate, validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
@@ -9,12 +8,14 @@ const { timestamps } = require('./schemas');
 const name = 'event';
 const schema = new mongoose.Schema({
   id_player: {
-    type: String,
+    type: mongoose.Types.ObjectId,
     required: true,
+    get: (key) => key.toString(),
   },
   id_abonament: {
-    type: String,
+    type: mongoose.Types.ObjectId,
     required: true,
+    get: (key) => key.toString(),
   },
   event_type: {
     type: String,
