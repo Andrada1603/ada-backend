@@ -1,23 +1,29 @@
+const Players = require('../../models/player');
+const Abonaments = require('../../models/abonament');
+
 module.exports = async () => {
+  const players = await Players.find();
+  const abonaments = await Abonaments.find();
+
   return [
     {
-      id_player: '62a85fcadd1f7a5c34a91613',
-      id_abonament: '62a85fc9dd1f7a5c34a915fb',
+      id_player: players[0]._id,
+      id_abonament: abonaments[0]._id,
       event_type: 'unofficial',
     },
     {
-      id_player: '62a85fcadd1f7a5c34a91614',
-      id_abonament: '62a85fc9dd1f7a5c34a915fc',
+      id_player: players[0]._id,
+      id_abonament: abonaments[0]._id,
       event_type: 'unofficial',
     },
     {
-      id_player: '62a85fcadd1f7a5c34a91615',
-      id_abonament: '62a85fc9dd1f7a5c34a915fd',
+      id_player: players[0]._id,
+      id_abonament: abonaments[0]._id,
       event_type: 'national',
     },
     {
-      id_player: '62a85fcadd1f7a5c34a91616',
-      id_abonament: '62a85fc9dd1f7a5c34a915fe',
+      id_player: players[0]._id,
+      id_abonament: abonaments[0]._id,
       event_type: 'international',
     },
   ];
