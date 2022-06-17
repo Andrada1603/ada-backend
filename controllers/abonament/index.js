@@ -1,7 +1,5 @@
-const ReadMany = require('./read-many');
-
+const readMany = require('./read-many');
 
 module.exports = {
-
-  ReadMany,
+  readMany,
 };
