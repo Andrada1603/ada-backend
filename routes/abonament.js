@@ -8,3 +8,4 @@ module.exports = router;
 router.get('/abonaments', authenticate, Abonament.readMany);
 router.post('/abonaments', authenticate, Abonament.create);
 router.delete('/abonament/:id', authenticate, Abonament.remove);
+router.get('/abonament/:id', authenticate, Abonament.readOne);
