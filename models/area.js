@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { isEmail } = require('validator');
 const { hashPasswords, paginate, validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
@@ -19,7 +18,6 @@ const schema = new mongoose.Schema({
   adresse: {
     type: String,
     required: true,
-
   },
   ...timestamps,
 });

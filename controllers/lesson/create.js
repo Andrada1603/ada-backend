@@ -18,5 +18,5 @@ module.exports = async (req, res) => {
     throw error(404, 'Resource not found');
   }
 
-  return res.status(200).json({ data: event, message: 'Lesson created' });
+  return res.status(200).json({ data: lesson, message: 'Lesson created' });
 };

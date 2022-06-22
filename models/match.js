@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { isEmail } = require('validator');
 const { hashPasswords, paginate, validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
