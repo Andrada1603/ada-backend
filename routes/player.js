@@ -7,4 +7,4 @@ module.exports = router;
 
 router.get('/players', authenticate, Player.readMany);
 router.post('/players', authenticate, Player.create);
-router.delete('/players/:id', authenticate, Player.remove);
+router.delete('/player/:id', authenticate, Player.remove);
