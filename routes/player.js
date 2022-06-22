@@ -6,3 +6,4 @@ const router = express.Router();
 module.exports = router;
 
 router.get('/players', authenticate, Player.readMany);
+router.post('/players', authenticate, Player.create);

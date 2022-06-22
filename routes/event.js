@@ -6,3 +6,4 @@ const router = express.Router();
 module.exports = router;
 
 router.get('/events', authenticate, Event.readMany);
+router.post('/events', authenticate, Event.create);

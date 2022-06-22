@@ -6,3 +6,4 @@ const router = express.Router();
 module.exports = router;
 
 router.get('/lessons', authenticate, Lesson.readMany);
+router.post('/lessons', authenticate, Lesson.create);
