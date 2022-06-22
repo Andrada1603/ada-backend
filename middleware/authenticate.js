@@ -7,7 +7,10 @@ const jwt = require('jsonwebtoken');
  */
 module.exports = (req, res, next) => {
   // const { authorization } = req.headers;
-  req.user = { me: {} };
+  req.user = {
+    me: {
+      _id: "62aa56b97f0a6a5d18d3216a"}
+  };
   next();
 
   // if (!authorization) {
