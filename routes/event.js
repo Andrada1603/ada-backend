@@ -7,3 +7,4 @@ module.exports = router;
 
 router.get('/events', authenticate, Event.readMany);
 router.post('/events', authenticate, Event.create);
+router.delete('/events/:id', authenticate, Event.remove);

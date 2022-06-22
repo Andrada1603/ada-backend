@@ -7,3 +7,4 @@ module.exports = router;
 
 router.get('/lessons', authenticate, Lesson.readMany);
 router.post('/lessons', authenticate, Lesson.create);
+router.delete('/lessons/:id', authenticate, Lesson.remove);
