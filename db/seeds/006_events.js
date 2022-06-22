@@ -1,13 +1,13 @@
 /* eslint-disable no-console */
-const Player = require('../../models/event');
-const players = require('../resources/events');
+const Event = require('../../models/event');
+const events = require('../resources/events');
 
 exports.seed = async () => {
   try {
     console.log('Planting seeds for events');
 
-    const seeds = await players();
-    await Player.insertMany(seeds);
+    const seeds = await events();
+    await Event.insertMany(seeds);
 
     console.log('✓');
   } catch (err) {

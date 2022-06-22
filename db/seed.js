@@ -7,6 +7,7 @@ const identities = require('./seeds/001_identities');
 const lessons = require('./seeds/007_lessons');
 const matches = require('./seeds/008_matches');
 const players = require('./seeds/005_players');
+const sports = require('./seeds/009_sports');
 
 
 const seed = async (params) => {
@@ -24,6 +25,7 @@ const seed = async (params) => {
   await events.seed();
   await lessons.seed();
   await matches.seed();
+  await sports.seed();
   
 };
 
