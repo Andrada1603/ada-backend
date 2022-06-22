@@ -5,4 +5,4 @@ const express = require('express');
 const router = express.Router();
 module.exports = router;
 
-router.get('/player', authenticate, Player.readMany);
+router.get('/players', authenticate, Player.readMany);

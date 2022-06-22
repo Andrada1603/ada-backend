@@ -10,7 +10,6 @@ const { lesson } = require('./routes');
 const { match } = require('./routes');
 const { player } = require('./routes');
 
-
 const router = Router();
 module.exports = router;
 
@@ -22,39 +21,15 @@ router.use(slow);
 router.use(identity);
 router.use(todo);
 router.use(abonament);
+router.use(area);
+router.use(coach);
+router.use(event);
+router.use(lesson);
+router.use(match);
+router.use(player);
 
 // matches any other HTTP method and route not matched before
 router.all('*', notFound);
 
 // finally, an error handler
 router.use(errorHandler);
-
-// use the router instances defined
-router.use(identity);
-router.use(todo);
-router.use(area);
-
-// use the router instances defined
-router.use(identity);
-router.use(todo);
-router.use(coach);
-
-// use the router instances defined
-router.use(identity);
-router.use(todo);
-router.use(event);
-
-// use the router instances defined
-router.use(identity);
-router.use(todo);
-router.use(lesson);
-
-// use the router instances defined
-router.use(identity);
-router.use(todo);
-router.use(match);
-
-// use the router instances defined
-router.use(identity);
-router.use(todo);
-router.use(player);
