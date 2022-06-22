@@ -6,7 +6,7 @@ const event = require('./event');
 const lesson = require('./lesson');
 const match = require('./match');
 const player = require('./player');
-
+const sport = require('./sport');
 
 module.exports = {
   abonament,
@@ -17,5 +17,5 @@ module.exports = {
   lesson,
   match,
   player,
-
+  sport,
 };

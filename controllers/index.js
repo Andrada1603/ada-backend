@@ -6,6 +6,7 @@ const Identity = require('./identity');
 const Lesson = require('./lesson');
 const Match = require('./match');
 const Player = require('./player');
+const Sport = require('./sport');
 
 module.exports = {
   Abonament,
@@ -16,4 +17,5 @@ module.exports = {
   Lesson,
   Match,
   Player,
+  Sport,
 };
