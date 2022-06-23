@@ -8,3 +8,4 @@ module.exports = router;
 router.get('/events', authenticate, Event.readMany);
 router.post('/events', authenticate, Event.create);
 router.delete('/event/:id', authenticate, Event.remove);
+router.get('/event/:id', authenticate, Event.readOne);

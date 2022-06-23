@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
     throw error(404, 'Resource not found');
   }
 
-  await area.remove();
+  await area.update(req.body);
 
-  return res.status(200).json({ data: area, message: 'Coach removed' });
+  return res.status(200).json({ data: area, message: 'Coach updated' });
 };

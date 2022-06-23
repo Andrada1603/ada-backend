@@ -8,12 +8,10 @@ module.exports = async (req, res) => {
     throw error(404, 'Missing required params');
   }
 
-  const area = await Coach.findById(id);
-  if (!area) {
+  const coach = await Coach.findById(id);
+  if (!coach) {
     throw error(404, 'Resource not found');
   }
 
-  await area.remove();
-
-  return res.status(200).json({ data: area, message: 'Coach removed' });
+  return res.status(200).json(coach);
 };

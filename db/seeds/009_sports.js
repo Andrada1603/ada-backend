@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-const Sport = require('../../models/match');
-const sports = require('../resources/matches');
+const Sport = require('../../models/sport');
+const sports = require('../resources/sports');
 
 exports.seed = async () => {
   try {
@@ -11,7 +11,7 @@ exports.seed = async () => {
 
     console.log('✓');
   } catch (err) {
-    console.warn('Error! Cannot insert matches');
+    console.warn('Error! Cannot insert sports');
     console.error(err);
   }
 };

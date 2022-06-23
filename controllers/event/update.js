@@ -1,5 +1,5 @@
 const { error } = require('../../functions');
-const { Coach } = require('../../models');
+const { Event } = require('../../models');
 
 module.exports = async (req, res) => {
   const { id } = req.params;
@@ -8,12 +8,12 @@ module.exports = async (req, res) => {
     throw error(404, 'Missing required params');
   }
 
-  const area = await Coach.findById(id);
-  if (!area) {
+  const event = await Event.findById(id);
+  if (!event) {
     throw error(404, 'Resource not found');
   }
 
-  await area.remove();
+  await event.update(req.body);
 
-  return res.status(200).json({ data: area, message: 'Coach removed' });
+  return res.status(200).json({ data: event, message: 'Event updated' });
 };

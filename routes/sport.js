@@ -7,3 +7,5 @@ module.exports = router;
 
 router.get('/sports', authenticate, Sport.readMany);
 router.post('/sports', authenticate, Sport.create);
+router.delete('/sport/:id', authenticate, Sport.remove);
+router.get('/sport/:id', authenticate, Sport.readOne);
