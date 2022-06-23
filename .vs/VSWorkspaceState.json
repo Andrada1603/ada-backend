@@ -2,13 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\controllers",
-    "\\controllers\\player",
-    "\\controllers\\sport",
-    "\\db",
-    "\\db\\resources",
-    "\\middleware",
+    "\\controllers\\area",
+    "\\controllers\\event",
     "\\routes"
   ],
-  "SelectedNode": "\\routes\\player.js",
+  "SelectedNode": "\\controllers\\area\\update.js",
   "PreviewInSolutionExplorer": false
 }

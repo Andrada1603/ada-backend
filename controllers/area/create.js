@@ -1,5 +1,5 @@
 const { error } = require('../../functions');
-const { Coach, Identity } = require('../../models');
+const { Area, Identity } = require('../../models');
 
 module.exports = async (req, res) => {
   const { me } = req.user;
@@ -13,10 +13,10 @@ module.exports = async (req, res) => {
     identity,
   };
 
-  const area = await Coach.create(payload);
+  const area = await Area.create(payload);
   if (!area) {
     throw error(404, 'Resource not found');
   }
 
-  return res.status(200).json({ data: area, message: 'Coach created' });
+  return res.status(200).json({ data: area, message: 'Area created' });
 };

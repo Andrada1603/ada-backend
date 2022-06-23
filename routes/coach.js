@@ -9,3 +9,4 @@ router.get('/coaches', authenticate, Coach.readMany);
 router.post('/coaches', authenticate, Coach.create);
 router.delete('/coach/:id', authenticate, Coach.remove);
 router.get('/coach/:id', authenticate, Coach.readOne);
+router.put('/coach/:id', authenticate, Coach.update);
