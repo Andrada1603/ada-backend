@@ -3,9 +3,6 @@ const { isEmail } = require('validator');
 const { hashPasswords, paginate, validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
-/**
- * Identities manage login related operations
- */
 const name = 'coach';
 const schema = new mongoose.Schema({
   first_name: {

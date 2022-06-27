@@ -2,25 +2,18 @@ const mongoose = require('mongoose');
 const { hashPasswords, paginate, validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
-/**
- * Identities manage login related operations
- */
 const name = 'event';
 const schema = new mongoose.Schema({
-  id_player: {
+  player: {
     type: mongoose.Types.ObjectId,
-    required: true,
-    get: (key) => key.toString(),
+    ref: 'player',
   },
-  id_abonament: {
+  abonament: {
     type: mongoose.Types.ObjectId,
-    required: true,
-    get: (key) => key.toString(),
+    ref: 'abonament',
   },
   event_type: {
     type: String,
-    enum:['unofficial', 'national', 'international'],
-
   },
   ...timestamps,
 });

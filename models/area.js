@@ -2,9 +2,6 @@ const mongoose = require('mongoose');
 const { hashPasswords, paginate, validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
-/**
- * Identities manage login related operations
- */
 const name = 'area';
 const schema = new mongoose.Schema({
   name: {
@@ -15,7 +12,7 @@ const schema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  adress: {
+  address: {
     type: String,
     required: true,
   },

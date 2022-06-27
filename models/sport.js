@@ -2,9 +2,6 @@ const mongoose = require('mongoose');
 const { hashPasswords, paginate, validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
-/**
- * Identities manage login related operations
- */
 const name = 'sport';
 const schema = new mongoose.Schema({
   name: {
@@ -18,13 +15,11 @@ const schema = new mongoose.Schema({
   coaches: [
     {
       type: mongoose.Types.ObjectId,
-      required: true,
-      get: (key) => key.toString(),
-    }
+      ref: 'coach',
+    },
   ],
   foundation_date: {
     type: Date,
-
   },
   ...timestamps,
 });
