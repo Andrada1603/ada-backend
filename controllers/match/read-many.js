@@ -7,7 +7,11 @@ module.exports = async (req, res) => {
     throw error(404, 'Missing required params');
   }
 
-  const matches = await Match.find({}).paginate(req.query);
+  const matches = await Match.find({})
+    .populate('player1')
+    .populate('player2')
+    .populate('location')
+    .paginate(req.query);
   if (!matches) {
     throw error(404, 'Resource not found');
   }

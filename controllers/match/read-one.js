@@ -8,7 +8,10 @@ module.exports = async (req, res) => {
     throw error(404, 'Missing required params');
   }
 
-  const match = await Match.findById(id);
+  const match = await Match.findById(id)
+    .populate('player1')
+    .populate('player2')
+    .populate('location');
   if (!match) {
     throw error(404, 'Resource not found');
   }

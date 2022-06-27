@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
     throw error(404, 'Missing required params');
   }
 
-  const events = await Event.find({}).paginate(req.query);
+  const events = await Event.find({}).populate('player').populate('abonament').paginate(req.query);
   if (!events) {
     throw error(404, 'Resource not found');
   }
