@@ -1,11 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\controllers",
     "\\controllers\\area",
     "\\controllers\\event",
+    "\\controllers\\match",
+    "\\db",
+    "\\db\\resources",
+    "\\models",
     "\\routes"
   ],
-  "SelectedNode": "\\controllers\\area\\update.js",
+  "SelectedNode": "\\models\\identity.js",
   "PreviewInSolutionExplorer": false
 }

@@ -36,6 +36,9 @@ const schema = new mongoose.Schema({
   confirmedAt: {
     type: Date,
   },
+  role: {
+    type: String,
+  },
   ...timestamps,
 });
 
