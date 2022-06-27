@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
 
   const lessons = await Lesson.find({})
     .populate('players')
-    .populate('area')
+    .populate('location')
     .populate('coach')
     .paginate(req.query);
 
