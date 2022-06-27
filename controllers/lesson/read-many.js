@@ -7,7 +7,12 @@ module.exports = async (req, res) => {
     throw error(404, 'Missing required params');
   }
 
-  const lessons = await Lesson.find({}).populate('players').populate('area').paginate(req.query);
+  const lessons = await Lesson.find({})
+    .populate('players')
+    .populate('area')
+    .populate('coach')
+    .paginate(req.query);
+
   if (!lessons) {
     throw error(404, 'Resource not found');
   }

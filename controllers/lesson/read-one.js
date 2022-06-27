@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
     throw error(404, 'Missing required params');
   }
 
-  const lesson = await Lesson.findById(id).populate('players').populate('area');
+  const lesson = await Lesson.findById(id).populate('players').populate('area').populate('coach');
   if (!lesson) {
     throw error(404, 'Resource not found');
   }

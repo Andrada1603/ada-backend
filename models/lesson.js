@@ -10,8 +10,7 @@ const schema = new mongoose.Schema({
   },
   coach: {
     type: mongoose.Types.ObjectId,
-    required: true,
-    get: (key) => key.toString(),
+    ref: 'coach',
   },
   players: [
     {
