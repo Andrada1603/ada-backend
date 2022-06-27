@@ -7,23 +7,23 @@ module.exports = async () => {
 
   return [
     {
-      id_player: players[0]._id,
-      id_abonament: abonaments[0]._id,
+      player: players[0]._id,
+      abonament: abonaments[0]._id,
       event_type: 'unofficial',
     },
     {
-      id_player: players[0]._id,
-      id_abonament: abonaments[0]._id,
+      player: players[0]._id,
+      abonament: abonaments[0]._id,
       event_type: 'unofficial',
     },
     {
-      id_player: players[0]._id,
-      id_abonament: abonaments[0]._id,
+      player: players[0]._id,
+      abonament: abonaments[0]._id,
       event_type: 'national',
     },
     {
-      id_player: players[0]._id,
-      id_abonament: abonaments[0]._id,
+      player: players[0]._id,
+      abonament: abonaments[0]._id,
       event_type: 'international',
     },
   ];

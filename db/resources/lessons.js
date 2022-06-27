@@ -8,7 +8,7 @@ module.exports = async () => {
   return [
     {
       name: 'Lectie demo sah',
-      coach_id: coaches[0]['_id'],
+      coach: coaches[0]['_id'],
       players: [players[0]['_id'], players[1]['_id']],
       date: new Date('2022-06-01'),
       location: areas[0]['_id'],
@@ -16,7 +16,7 @@ module.exports = async () => {
     },
     {
       name: 'Lectie demo fotbal',
-      coach_id: coaches[1]['_id'],
+      coach: coaches[1]['_id'],
       players: [players[2]['_id'], players[3]['_id']],
       date: new Date('2022-06-02'),
       location: areas[4]['_id'],
@@ -24,7 +24,7 @@ module.exports = async () => {
     },
     {
       name: 'Lectie demo volei',
-      coach_id: coaches[2]['_id'],
+      coach: coaches[2]['_id'],
       players: [players[4]['_id'], players[0]['_id'], players[3]['_id']],
       date: new Date('2022-06-05'),
       location: areas[2]['_id'],
@@ -32,7 +32,7 @@ module.exports = async () => {
     },
     {
       name: 'Lectie demo eSports',
-      coach_id: coaches[3]['_id'],
+      coach: coaches[3]['_id'],
       players: [players[5]['_id'], players[1]['_id']],
       date: new Date('2022-05-30'),
       location: areas[2]['_id'],
