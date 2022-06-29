@@ -17,7 +17,7 @@ module.exports = async () => {
       foundation_date: new Date('2020-12-05'),
     },
     {
-      name: 'Fotbal-Tenis',
+      name: 'Fotbal',
       manager_name: 'Dulceata Victor',
       coaches: [coaches[1]['_id']],
       foundation_date: new Date('2021-02-04'),
