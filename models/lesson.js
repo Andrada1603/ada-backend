@@ -26,6 +26,10 @@ const schema = new mongoose.Schema({
     type: mongoose.Types.ObjectId,
     ref: 'area',
   },
+  sport: {
+    type: mongoose.Types.ObjectId,
+    ref: 'sport',
+  },
   description: {
     type: String,
   },

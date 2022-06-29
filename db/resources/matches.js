@@ -1,8 +1,9 @@
-const { Area, Player } = require('../../models');
+const { Area, Player, Sport } = require('../../models');
 
 module.exports = async () => {
   const players = await Player.find();
   const areas = await Area.find();
+  const sport = await Sport.find();
 
   return [
     {
@@ -11,7 +12,7 @@ module.exports = async () => {
       arbiter_name: 'Chirila Radu',
       date: new Date('2022-06-01'),
       location: areas[0]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[0]['_id'],
@@ -19,7 +20,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-01'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[1]['_id'],
@@ -27,7 +28,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-01'),
       location: areas[2]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[4]['_id'],
@@ -35,7 +36,7 @@ module.exports = async () => {
       arbiter_name: 'Popescu Andrei',
       date: new Date('2022-06-01'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[1]['_id'],
@@ -43,7 +44,7 @@ module.exports = async () => {
       arbiter_name: 'Chirila Radu',
       date: new Date('2022-06-01'),
       location: areas[0]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[1]['_id'],
@@ -51,7 +52,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-02'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[2]['_id'],
@@ -59,7 +60,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-02'),
       location: areas[2]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[4]['_id'],
@@ -67,7 +68,7 @@ module.exports = async () => {
       arbiter_name: 'Popescu Andrei',
       date: new Date('2022-06-02'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[3]['_id'],
@@ -75,7 +76,7 @@ module.exports = async () => {
       arbiter_name: 'Chirila Radu',
       date: new Date('2022-06-03'),
       location: areas[0]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[3]['_id'],
@@ -83,7 +84,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-03'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[4]['_id'],
@@ -91,7 +92,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-03'),
       location: areas[2]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[4]['_id'],
@@ -99,7 +100,7 @@ module.exports = async () => {
       arbiter_name: 'Popescu Andrei',
       date: new Date('2022-06-03'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[6]['_id'],
@@ -107,7 +108,7 @@ module.exports = async () => {
       arbiter_name: 'Chirila Radu',
       date: new Date('2022-06-04'),
       location: areas[0]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[7]['_id'],
@@ -115,7 +116,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-04'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[6]['_id'],
@@ -123,7 +124,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-04'),
       location: areas[2]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[7]['_id'],
@@ -131,7 +132,7 @@ module.exports = async () => {
       arbiter_name: 'Popescu Andrei',
       date: new Date('2022-06-05'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[7]['_id'],
@@ -139,7 +140,7 @@ module.exports = async () => {
       arbiter_name: 'Chirila Radu',
       date: new Date('2022-06-05'),
       location: areas[0]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[8]['_id'],
@@ -147,7 +148,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-05'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[8]['_id'],
@@ -155,7 +156,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-05'),
       location: areas[2]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
     {
       player1: players[9]['_id'],
@@ -163,7 +164,7 @@ module.exports = async () => {
       arbiter_name: 'Popescu Andrei',
       date: new Date('2022-06-05'),
       location: areas[1]['_id'],
-      match_type: 'Campionatul National',
+      sport: sport[0],
     },
   ];
 };

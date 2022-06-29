@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\controllers",
-    "\\controllers\\match",
     "\\db",
     "\\db\\resources",
-    "\\db\\seeds",
     "\\models"
   ],
+  "SelectedNode": "\\db\\resources\\lessons.js",
   "PreviewInSolutionExplorer": false
 }
