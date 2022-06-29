@@ -23,8 +23,9 @@ const schema = new mongoose.Schema({
     type: mongoose.Types.ObjectId,
     ref: 'area',
   },
-  match_type: {
-    type: String,
+  sport: {
+    type: mongoose.Types.ObjectId,
+    ref: 'sport',
   },
   ...timestamps,
 });
