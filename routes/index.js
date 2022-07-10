@@ -2,6 +2,7 @@ const identity = require('./identity');
 const abonament = require('./abonament');
 const area = require('./area');
 const coach = require('./coach');
+const dashboard=require('./dashboard')
 const event = require('./event');
 const lesson = require('./lesson');
 const match = require('./match');
@@ -12,6 +13,7 @@ module.exports = {
   abonament,
   area,
   coach,
+  dashboard,
   identity,
   event,
   lesson,

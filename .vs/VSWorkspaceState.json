@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\db",
-    "\\db\\resources",
+    "\\middleware",
     "\\models"
   ],
-  "SelectedNode": "\\db\\resources\\lessons.js",
+  "SelectedNode": "\\middleware\\authenticate.js",
   "PreviewInSolutionExplorer": false
 }

@@ -5,6 +5,7 @@ const {
   abonament,
   area,
   coach,
+  dashboard,
   event,
   lesson,
   match,
@@ -24,6 +25,7 @@ router.use(identity);
 router.use(abonament);
 router.use(area);
 router.use(coach);
+router.use(dashboard);
 router.use(event);
 router.use(lesson);
 router.use(match);

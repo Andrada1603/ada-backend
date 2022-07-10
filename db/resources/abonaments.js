@@ -26,7 +26,7 @@ module.exports = async () => {
     },
     {
       abonament_type: 'Basic',
-      starting_date: new Date("2022-05-01"),
+      starting_date: new Date("2022-06-010"),
       period: 30,
       price: 200,
     },
