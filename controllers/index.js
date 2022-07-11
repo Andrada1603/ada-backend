@@ -2,6 +2,7 @@ const Abonament = require('./abonament');
 const Area = require('./area');
 const Coach = require('./coach');
 const Dashboard = require('./dashboard');
+const Event = require('./event');
 const Identity = require('./identity');
 const Lesson = require('./lesson');
 const Match = require('./match');

@@ -1,22 +1,21 @@
-const mongoose = require('mongoose');
+const { Player, Coach, Lesson, Match, Abonament } = require('../../models');
 
-// Database Connection
-mongoose.connect('mongodb://localhost:27017', {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true
-});
+const getTotals = async (req, res) => {
+  const numPlayers = await Player.countDocuments()
+  const numCoaches = await Coach.countDocuments()
+  const numLessons = await Lesson.countDocuments()
+  const numMatches = await Match.countDocuments()
+  const numAbonaments = await Abonament.countDocuments()
 
-const numPlayers = await Players.countDocuments()
-const numCoaches = await Coaches.countDocuments()
-const numLessons = await Lessons.countDocuments()
-const numMatches = await Matches.countDocuments()
-const numAbonaments = await Abonaments.countDocuments()
+  return res.status(200).json({
+    numAbonaments,
+    numCoaches,
+    numLessons,
+    numMatches,
+    numPlayers,
+  });
 
-module.exports={
-  numAbonaments,
-  numCoaches,
-  numLessons,
-  numMatches,
-  numPlayers,
 }
+
+
+module.exports = getTotals

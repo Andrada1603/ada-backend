@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\middleware",
-    "\\models"
+    "\\controllers",
+    "\\controllers\\dashboard",
+    "\\db",
+    "\\models",
+    "\\routes"
   ],
-  "SelectedNode": "\\middleware\\authenticate.js",
+  "SelectedNode": "\\controllers\\dashboard\\getTotals.js",
   "PreviewInSolutionExplorer": false
 }
