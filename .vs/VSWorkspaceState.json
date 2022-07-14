@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\controllers",
     "\\controllers\\abonament",
     "\\controllers\\dashboard",
-    "\\controllers\\event"
+    "\\models",
+    "\\routes"
   ],
-  "SelectedNode": "\\controllers",
+  "SelectedNode": "\\controllers\\dashboard\\getTotals.js",
   "PreviewInSolutionExplorer": false
 }

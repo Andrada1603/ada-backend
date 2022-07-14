@@ -2,6 +2,10 @@ const { Player, Coach, Lesson, Match, Abonament } = require('../../models');
 
 const getTotals = async (req, res) => {
   const numAbonaments = await Abonament.countDocuments()
+  const numCoaches = await Coach.countDocuments()
+  const numLessons = await Lesson.countDocuments()
+  const numMatches = await Match.countDocuments()
+  const numPlayers = await Abonament.countDocuments()
 
   const playersByCat = await Player.aggregate([
     {
@@ -54,6 +58,13 @@ const getTotals = async (req, res) => {
     lessonsBySport,
     matchesBySport,
     playersByCat,
+
+    numAbonaments,
+    numCoaches,
+    numLessons,
+    numMatches,
+    numPlayers,
+
   });
 
 }
