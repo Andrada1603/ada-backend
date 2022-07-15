@@ -36,6 +36,8 @@
     "lodash": "^4.17.21",
     "mongoose": "^5.13.8",
     "pino": "^6.13.1",
+    "react-csv": "^2.2.2",
+    "react-html-table-to-excel": "^2.0.0",
     "validator": "^13.6.0"
   },
   "devDependencies": {
