@@ -11,6 +11,7 @@ module.exports = async (req, res) => {
     .populate('player1')
     .populate('player2')
     .populate('location')
+    .populate('sport')
     .paginate(req.query);
   if (!matches) {
     throw error(404, 'Resource not found');

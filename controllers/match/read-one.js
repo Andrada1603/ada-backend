@@ -11,7 +11,9 @@ module.exports = async (req, res) => {
   const match = await Match.findById(id)
     .populate('player1')
     .populate('player2')
-    .populate('location');
+    .populate('location')
+    .populate('sport');
+
   if (!match) {
     throw error(404, 'Resource not found');
   }

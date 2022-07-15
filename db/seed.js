@@ -22,11 +22,11 @@ const seed = async (params) => {
   await coaches.seed();
   await players.seed();
   await identities.seed();
+  await sports.seed();
   await events.seed();
   await lessons.seed();
   await matches.seed();
-  await sports.seed();
-  
+
 };
 
 (async () => {
