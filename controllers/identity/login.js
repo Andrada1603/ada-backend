@@ -13,8 +13,9 @@ module.exports = async (req, res) => {
   if (!identity) {
     throw error(400, 'Your email or password are invalid');
   }
+  console.log(identity);
 
-  const { id, name, active, confirmed, __t: role, password: passwordFromDb } = identity;
+  const { id, name, active, confirmed, role, password: passwordFromDb } = identity;
   if (!active || !confirmed) {
     throw error(400, 'Your account is not active, yet');
   }
@@ -27,6 +28,7 @@ module.exports = async (req, res) => {
   // the JWT public data payload
   const payload = { name, email, role, me: id };
 
+  console.log(payload)
   const token = jwt.sign(payload, process.env.JWT_SECRET, {
     expiresIn: '15m',
     algorithm: 'HS256',
