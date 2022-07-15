@@ -12,5 +12,5 @@ router.post('/reset/:hash', recaptcha, Identity.reset);
 
 router.post('/logout', Identity.logout);
 router.post('/refresh-token', Identity.refreshToken);
-
+router.post('/signup', Identity.signup);
 router.get('/profile', authenticate, Identity.profile);
