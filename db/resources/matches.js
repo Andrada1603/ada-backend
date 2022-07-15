@@ -20,7 +20,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-01'),
       location: areas[1]['_id'],
-      sport: sport[0],
+      sport: sport[1],
     },
     {
       player1: players[1]['_id'],
@@ -28,7 +28,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-01'),
       location: areas[2]['_id'],
-      sport: sport[0],
+      sport: sport[2],
     },
     {
       player1: players[4]['_id'],
@@ -44,7 +44,7 @@ module.exports = async () => {
       arbiter_name: 'Chirila Radu',
       date: new Date('2022-06-01'),
       location: areas[0]['_id'],
-      sport: sport[0],
+      sport: sport[1],
     },
     {
       player1: players[1]['_id'],
@@ -52,7 +52,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-02'),
       location: areas[1]['_id'],
-      sport: sport[0],
+      sport: sport[2],
     },
     {
       player1: players[2]['_id'],
@@ -60,7 +60,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-02'),
       location: areas[2]['_id'],
-      sport: sport[0],
+      sport: sport[2],
     },
     {
       player1: players[4]['_id'],
@@ -68,7 +68,7 @@ module.exports = async () => {
       arbiter_name: 'Popescu Andrei',
       date: new Date('2022-06-02'),
       location: areas[1]['_id'],
-      sport: sport[0],
+      sport: sport[1],
     },
     {
       player1: players[3]['_id'],
@@ -84,7 +84,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-03'),
       location: areas[1]['_id'],
-      sport: sport[0],
+      sport: sport[1],
     },
     {
       player1: players[4]['_id'],
@@ -92,7 +92,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-03'),
       location: areas[2]['_id'],
-      sport: sport[0],
+      sport: sport[1],
     },
     {
       player1: players[4]['_id'],
@@ -108,7 +108,7 @@ module.exports = async () => {
       arbiter_name: 'Chirila Radu',
       date: new Date('2022-06-04'),
       location: areas[0]['_id'],
-      sport: sport[0],
+      sport: sport[2],
     },
     {
       player1: players[7]['_id'],
@@ -116,7 +116,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-04'),
       location: areas[1]['_id'],
-      sport: sport[0],
+      sport: sport[1],
     },
     {
       player1: players[6]['_id'],
@@ -124,7 +124,7 @@ module.exports = async () => {
       arbiter_name: 'Muntean Ciprian',
       date: new Date('2022-06-04'),
       location: areas[2]['_id'],
-      sport: sport[0],
+      sport: sport[2],
     },
     {
       player1: players[7]['_id'],
@@ -132,7 +132,7 @@ module.exports = async () => {
       arbiter_name: 'Popescu Andrei',
       date: new Date('2022-06-05'),
       location: areas[1]['_id'],
-      sport: sport[0],
+      sport: sport[1],
     },
     {
       player1: players[7]['_id'],
@@ -140,7 +140,7 @@ module.exports = async () => {
       arbiter_name: 'Chirila Radu',
       date: new Date('2022-06-05'),
       location: areas[0]['_id'],
-      sport: sport[0],
+      sport: sport[2],
     },
     {
       player1: players[8]['_id'],
@@ -148,7 +148,7 @@ module.exports = async () => {
       arbiter_name: 'Nicula Ioan',
       date: new Date('2022-06-05'),
       location: areas[1]['_id'],
-      sport: sport[0],
+      sport: sport[1],
     },
     {
       player1: players[8]['_id'],

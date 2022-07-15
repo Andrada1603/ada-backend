@@ -26,7 +26,7 @@ module.exports = async () => {
       last_name: 'Baston',
       birthday: new Date("2006-08-14"),
       email: 'bastonemilia@gmail.com',
-      category: '-',
+      category: 'Fara categorie',
     },
     {
       first_name: 'Simon',
@@ -75,7 +75,7 @@ module.exports = async () => {
       last_name: 'Popovici',
       birthday: new Date("2015-07-02"),
       email: 'mariapopovici@gmai.com',
-      category: 'Fara Categorie',
+      category: 'Fara categorie',
     },
     {
       first_name: 'Alessia-Mihaela',
@@ -96,7 +96,7 @@ module.exports = async () => {
       last_name: 'Macaveiu',
       birthday: new Date("2016-02-15"),
       email: 'marinmacaveiu@gmail.com',
-      category: 'Fara Categorie',
+      category: 'Fara categorie',
     },
     {
       first_name: 'Alexandra',
@@ -117,7 +117,7 @@ module.exports = async () => {
       last_name: 'Carpet',
       birthday: new Date("2006-12-04"),
       email: 'razvancarpet@yahoo.com',
-      category: 'Maestru national',
+      category: 'Maestru National',
     },
     {
       first_name: 'Madalina-Maria',

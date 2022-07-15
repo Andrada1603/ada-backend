@@ -52,7 +52,7 @@ module.exports = async () => {
       email: 'vladbarbu@yahoo.com',
       salary: 3000,
       coach_category: 'Antrenor national',
-      license_number: 489,
+      license_number: 3423,
     },
     {
       first_name: 'Ana-Maria',
@@ -61,7 +61,7 @@ module.exports = async () => {
       email: 'vladescuanau@gmail.com',
       salary: 3000,
       coach_category: 'Fara categorie',
-      license_number: 489,
+      license_number: 756756,
     },
     {
       first_name: 'Bogdan',
@@ -70,7 +70,7 @@ module.exports = async () => {
       email: 'posedarubogdan@yahoo.com',
       salary: 3000,
       coach_category: 'Antrenor emerit',
-      license_number: 489,
+      license_number: 24234,
     },
     {
       first_name: 'Dan',
@@ -79,16 +79,25 @@ module.exports = async () => {
       email: 'enutadan@gmail.com',
       salary: 3000,
       coach_category: 'Antrenor national',
-      license_number: 489,
+      license_number: 6578,
     },
     {
       first_name: 'Emilian',
       last_name: 'Frasina',
       birthday: new Date("1974-02-12"),
-      email: 'enutadan@gmail.com',
+      email: 'emifrasina@gmail.com',
+      salary: 3000,
+      coach_category: 'Antrenor national',
+      license_number: 5332,
+    },
+    {
+      first_name: 'Panea',
+      last_name: 'Ionut-Valentin',
+      birthday: new Date("1974-02-12"),
+      email: 'ionutpanea@ase.com',
       salary: 3000,
       coach_category: 'Antrenor national',
       license_number: 489,
-    },
+    }
   ];
 };

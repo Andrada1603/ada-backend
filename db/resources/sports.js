@@ -28,5 +28,17 @@ module.exports = async () => {
       coaches: [coaches[3]['_id']],
       foundation_date: new Date('2021-05-14'),
     },
+    {
+      name: 'ESports',
+      manager_name: 'Iozu Rafael',
+      coaches: [coaches[9]['_id']],
+      foundation_date: new Date('2021-03-12'),
+    },
+    {
+      name: 'Robotica',
+      manager_name: 'Panea Ionut',
+      coaches: [coaches[10]['_id']],
+      foundation_date: new Date('2021-03-12'),
+    },
   ];
 };

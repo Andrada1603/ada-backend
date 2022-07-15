@@ -13,7 +13,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[1]['_id']],
       date: new Date('2022-06-01'),
       location: areas[0]['_id'],
-      sport: sport[1]['_id'],
+      sport: sport[0]['_id'],
       description: 'Prima lectie de sah',
     },
     {
@@ -22,7 +22,7 @@ module.exports = async () => {
       players: [players[2]['_id'], players[3]['_id']],
       date: new Date('2022-06-02'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Prima lectie de fotbal',
     },
     {
@@ -31,7 +31,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[0]['_id'], players[3]['_id']],
       date: new Date('2022-06-05'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Prima lectie de volei',
     },
     {
@@ -40,7 +40,7 @@ module.exports = async () => {
       players: [players[5]['_id'], players[1]['_id']],
       date: new Date('2022-05-30'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[4]['_id'],
       description: 'Prima lectie de eSports',
     },
     {
@@ -58,7 +58,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-03-12'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Reguli si principii de baza in fotbal',
     },
     {
@@ -67,7 +67,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[5]['_id'], players[6]['_id']],
       date: new Date('2022-04-05'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[3]['_id'],
       description: 'Reguli si principii de baza in baschet',
     },
     {
@@ -76,7 +76,7 @@ module.exports = async () => {
       players: [players[5]['_id'], players[7]['_id'], players[6]['_id']],
       date: new Date('2022-05-14'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Reguli si principii de baza in volei',
     },
     {
@@ -94,7 +94,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-05-24'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Cum atacam la fotbal',
     },
     {
@@ -103,7 +103,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id'], players[6]['_id']],
       date: new Date('2022-05-28'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Cum ne aparam la fotbal?',
     },
     {
@@ -112,7 +112,7 @@ module.exports = async () => {
       players: [players[5]['_id'], players[7]['_id'], players[6]['_id'], players[4]['_id']],
       date: new Date('2022-04-18'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Exercitii simple cu pase peste fileu',
     },
     {
@@ -121,7 +121,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[7]['_id'], players[8]['_id']],
       date: new Date('2022-05-20'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[3]['_id'],
       description: 'Aruncari la cos si diverse jocuri cu tema de baschet',
     },
     {
@@ -130,7 +130,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[2]['_id'], players[5]['_id'], players[4]['_id']],
       date: new Date('2022-04-02'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[4]['_id'],
       description: 'Ce este eSports-ul? Despre disciplina in eSports',
     },
     {
@@ -139,7 +139,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-03-12'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[5]['_id'],
       description: 'Ce este robotica? Jocuri simple',
     },
     {
@@ -148,7 +148,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[1]['_id'], players[2]['_id'], players[3]['_id'], players[4]['_id'], players[5]['_id']],
       date: new Date('2022-05-29'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Construim o echipa cu cei prezenti pentru a vedea pe ce pozitii s-ar potrivi',
     },
     {
@@ -166,7 +166,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[8]['_id'], players[12]['_id']],
       date: new Date('2022-06-25'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Diverse jocuri cu pase peste fileu',
     },
     {
@@ -175,7 +175,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-03-20'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[5]['_id'],
       description: 'Notiuni introductive de programare si componente hardware',
     },
     {
@@ -184,7 +184,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[2]['_id'], players[5]['_id'], players[4]['_id']],
       date: new Date('2022-06-05'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[4]['_id'],
       description: 'Cele mai cunoscute jocuri si cum trebuie sa ne antrenam',
     },
     {
@@ -193,7 +193,7 @@ module.exports = async () => {
       players: [players[11]['_id'], players[8]['_id'], players[9]['_id'], players[4]['_id']],
       date: new Date('2022-06-10'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[3]['_id'],
       description: 'Cum ne aranjam pe teren, ce rol are fiecare jucator etc',
     },
     {
@@ -211,7 +211,7 @@ module.exports = async () => {
       players: [players[2]['_id'], players[3]['_id']],
       date: new Date('2022-07-02'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Cum tragem corect la poarta',
     },
     {
@@ -220,7 +220,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[0]['_id'], players[3]['_id']],
       date: new Date('2022-07-05'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Cum ne antrenam rezistenta',
     },
     {
@@ -229,7 +229,7 @@ module.exports = async () => {
       players: [players[5]['_id'], players[1]['_id']],
       date: new Date('2022-07-30'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[5]['_id'],
       description: 'Despre FIFA 2022',
     },
     {
@@ -247,7 +247,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-07-12'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Exercitii pentru dezvoltarea rezistentei pe teren',
     },
     {
@@ -256,7 +256,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[5]['_id'], players[6]['_id']],
       date: new Date('2022-08-05'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[3]['_id'],
       description: 'Exercitii pentru dezvoltarea rezistentei pe teren',
     },
     {
@@ -265,7 +265,7 @@ module.exports = async () => {
       players: [players[5]['_id'], players[7]['_id'], players[6]['_id']],
       date: new Date('2022-08-14'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Cum servim mai bine?',
     },
     {
@@ -283,7 +283,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-07-24'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Exercitii cu pase intre mai multi jucatori',
     },
     {
@@ -292,7 +292,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id'], players[6]['_id']],
       date: new Date('2022-07-28'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[3]['_id'],
       description: 'Cum executam corect o lovitura libera?',
     },
     {
@@ -301,7 +301,7 @@ module.exports = async () => {
       players: [players[5]['_id'], players[7]['_id'], players[6]['_id'], players[4]['_id']],
       date: new Date('2022-08-18'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Exercitii simple cu pase peste fileu',
     },
     {
@@ -310,7 +310,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[7]['_id'], players[8]['_id']],
       date: new Date('2022-07-20'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Aruncari la cos si diverse jocuri cu tema de baschet',
     },
     {
@@ -319,7 +319,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[2]['_id'], players[5]['_id'], players[4]['_id']],
       date: new Date('2022-08-02'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[4]['_id'],
       description: 'Cele mai importante principii ale jocului League of Legends',
     },
     {
@@ -328,7 +328,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-08-12'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[5]['_id'],
       description: 'Notiuni mai avansate de programare si lucru cu blocuri de cod pentru a programa un robot',
     },
     {
@@ -337,7 +337,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[1]['_id'], players[2]['_id'], players[3]['_id'], players[4]['_id'], players[5]['_id']],
       date: new Date('2022-07-29'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Cum executam corect un penalty?',
     },
     {
@@ -355,7 +355,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[8]['_id'], players[12]['_id']],
       date: new Date('2022-07-25'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Diverse jocuri cu pase peste fileu',
     },
     {
@@ -364,7 +364,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-07-20'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[5]['_id'],
       description: 'Exercitii cu blocuri de cod',
     },
     {
@@ -373,7 +373,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[2]['_id'], players[5]['_id'], players[4]['_id']],
       date: new Date('2022-06-05'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[4]['_id'],
       description: 'Turneu amical de Valorant intre participantii al lectie',
     },
     {
@@ -382,7 +382,7 @@ module.exports = async () => {
       players: [players[11]['_id'], players[8]['_id'], players[9]['_id'], players[4]['_id']],
       date: new Date('2022-07-10'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[3]['_id'],
       description: 'Cum ne aranjam pe teren, ce rol are fiecare jucator etc',
     },
     {
@@ -391,7 +391,7 @@ module.exports = async () => {
       players: [players[5]['_id'], players[7]['_id'], players[6]['_id'], players[4]['_id']],
       date: new Date('2022-08-18'),
       location: areas[2]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Exercitii simple cu pase peste fileu',
     },
     {
@@ -400,7 +400,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[7]['_id'], players[8]['_id']],
       date: new Date('2022-07-20'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[3]['_id'],
       description: 'Aruncari la cos si diverse jocuri cu tema de baschet',
     },
     {
@@ -409,7 +409,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[2]['_id'], players[5]['_id'], players[4]['_id']],
       date: new Date('2022-08-02'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[4]['_id'],
       description: 'Cele mai importante principii ale jocului League of Legends',
     },
     {
@@ -418,7 +418,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-08-12'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[5]['_id'],
       description: 'Notiuni mai avansate de programare si lucru cu blocuri de cod pentru a programa un robot',
     },
     {
@@ -427,7 +427,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[1]['_id'], players[2]['_id'], players[3]['_id'], players[4]['_id'], players[5]['_id']],
       date: new Date('2022-07-29'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Cum executam corect un penalty?',
     },
     {
@@ -445,7 +445,7 @@ module.exports = async () => {
       players: [players[4]['_id'], players[8]['_id'], players[12]['_id']],
       date: new Date('2022-07-25'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[1]['_id'],
       description: 'Diverse jocuri cu pase peste fileu',
     },
     {
@@ -454,7 +454,7 @@ module.exports = async () => {
       players: [players[3]['_id'], players[4]['_id'], players[1]['_id']],
       date: new Date('2022-08-20'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[2]['_id'],
       description: 'Regulile din timpul unei competitii, sfaturi de bune practici',
     },
     {
@@ -463,7 +463,7 @@ module.exports = async () => {
       players: [players[0]['_id'], players[2]['_id'], players[5]['_id'], players[4]['_id']],
       date: new Date('2022-05-05'),
       location: areas[3]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[5]['_id'],
       description: 'Turneu amical de FIFA2022 intre participantii al lectie',
     },
     {
@@ -472,7 +472,7 @@ module.exports = async () => {
       players: [players[11]['_id'], players[8]['_id'], players[9]['_id'], players[4]['_id']],
       date: new Date('2022-08-10'),
       location: areas[1]['_id'],
-      sport: sport[0]['_id'],
+      sport: sport[3]['_id'],
       description: 'Imbunatatirea abilitatilor fiecarui jucator in functie de pozitia pe care activeaza',
     },
   ];
