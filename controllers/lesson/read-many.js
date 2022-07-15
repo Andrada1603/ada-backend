@@ -11,6 +11,7 @@ module.exports = async (req, res) => {
     .populate('players')
     .populate('location')
     .populate('coach')
+    .populate('sport')
     .paginate(req.query);
 
   if (!lessons) {
